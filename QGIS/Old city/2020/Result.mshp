@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="LONGINT">id</FIELD>
+      <FIELD TYPE="DOUBLE">left</FIELD>
+      <FIELD TYPE="DOUBLE">top</FIELD>
+      <FIELD TYPE="DOUBLE">right</FIELD>
+      <FIELD TYPE="DOUBLE">bottom</FIELD>
+      <FIELD TYPE="DOUBLE">LST2020</FIELD>
+      <FIELD TYPE="DOUBLE">ndbi2020</FIELD>
+      <FIELD TYPE="DOUBLE">ndvi2020</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="7.8.2">
+    <TOOL library="shapes_grid" id="0" name="Add Grid Values to Points">
+      <OPTION type="choice" id="RESAMPLING" name="Resampling" index="0">Nearest Neighbour</OPTION>
+      <INPUT type="shapes" id="SHAPES" name="Points">
+        <FILE>C:/Divyakumar Kotia/Project/Old city/QGIS/2020/city_points.shp</FILE>
+      </INPUT>
+      <INPUT_LIST type="grid_list" id="GRIDS" name="Grids">
+        <INPUT type="grid_list" id="GRIDS" name="Grids">
+          <FILE>C:/Users/Utsav Kotia/AppData/Local/Temp/processing_gGJWyI/0093c5fa0e8e47138274de9a6711c3b5/LST2020.sgrd</FILE>
+        </INPUT>
+        <INPUT type="grid_list" id="GRIDS" name="Grids">
+          <FILE>C:/Users/Utsav Kotia/AppData/Local/Temp/processing_gGJWyI/aa6e45b34a22420f8373ffcffdbb18ce/ndbi2020.sgrd</FILE>
+        </INPUT>
+        <INPUT type="grid_list" id="GRIDS" name="Grids">
+          <FILE>C:/Users/Utsav Kotia/AppData/Local/Temp/processing_gGJWyI/d96ef46b8b2543348b6fbe17323da379/ndvi2020.sgrd</FILE>
+        </INPUT>
+      </INPUT_LIST>
+      <OUTPUT type="shapes" id="RESULT" name="Result">city_points</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</OGC_WKT>
+    <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+    <EPSG>-1</EPSG>
+  </PROJECTION>
+</SAGA_METADATA>
